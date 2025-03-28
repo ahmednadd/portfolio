@@ -193,7 +193,7 @@ h3 {
 .work-box video {
   height: 100%;
   width: 100%;
-  object-fit: contain;
+  object-fit: cover;
 }
 #work-section .row .work-box:hover {
   background-color: #e6e6e6;
