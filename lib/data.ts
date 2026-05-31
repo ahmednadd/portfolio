@@ -1,5 +1,8 @@
 import { IProject } from '@/types';
 
+const base = process.env.NEXT_PUBLIC_BASE_PATH || '';
+const video = (path: string) => `${base}${path}`;
+
 export const GENERAL_INFO = {
     email: 'ahmed.nadd@outlook.com',
 
@@ -67,7 +70,7 @@ export const PROJECTS: IProject[] = [
         title: 'Flow Studio',
         slug: 'flow-studio',
         year: 2025,
-        video: '/videos/flow-studio.mp4',
+        video: video('/videos/flow-studio.mp4'),
         thumbnail: '',
         longThumbnail: '',
         images: [],
@@ -91,7 +94,7 @@ Key Features:<br/>
         title: 'Holofy Spaces',
         slug: 'holofy-spaces',
         year: 2023,
-        video: '/videos/holofy-spaces.mp4',
+        video: video('/videos/holofy-spaces.mp4'),
         thumbnail: '',
         longThumbnail: '',
         images: [],
@@ -115,7 +118,7 @@ Key Features:<br/>
         title: 'Lead Engager',
         slug: 'lead-engager',
         year: 2022,
-        video: '/videos/lead-engager.mp4',
+        video: video('/videos/lead-engager.mp4'),
         thumbnail: '',
         longThumbnail: '',
         images: [],
@@ -147,7 +150,7 @@ Key Features:<br/>
         title: 'Dashboard',
         slug: 'dashboard',
         year: 2023,
-        video: '/videos/dashboard.webm',
+        video: video('/videos/dashboard.webm'),
         thumbnail: '',
         longThumbnail: '',
         images: [],
@@ -159,7 +162,7 @@ Key Features:<br/>
         title: 'Natours',
         slug: 'natours',
         year: 2021,
-        video: '/videos/natours.webm',
+        video: video('/videos/natours.webm'),
         thumbnail: '',
         longThumbnail: '',
         images: [],
@@ -172,7 +175,7 @@ Key Features:<br/>
         title: 'Slaet',
         slug: 'slaet',
         year: 2021,
-        video: '/videos/slaet.webm',
+        video: video('/videos/slaet.webm'),
         thumbnail: '',
         longThumbnail: '',
         images: [],
