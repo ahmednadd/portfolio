@@ -2,6 +2,7 @@ import { IProject } from '@/types';
 
 const base = process.env.NEXT_PUBLIC_BASE_PATH || '';
 const video = (path: string) => `${base}${path}`;
+const asset = (path: string) => `${base}${path}`;
 
 export const GENERAL_INFO = {
     email: 'ahmed.nadd@outlook.com',
@@ -20,47 +21,47 @@ export const MY_STACK = {
     frontend: [
         {
             name: 'JavaScript',
-            icon: '/logo/js.png',
+            icon: asset('/logo/js.png'),
         },
         {
             name: 'TypeScript',
-            icon: '/logo/ts.png',
+            icon: asset('/logo/ts.png'),
         },
         {
             name: 'React',
-            icon: '/logo/react.png',
+            icon: asset('/logo/react.png'),
         },
         {
             name: 'Next.js',
-            icon: '/logo/next.png',
+            icon: asset('/logo/next.png'),
         },
         {
             name: 'Redux',
-            icon: '/logo/redux.png',
+            icon: asset('/logo/redux.png'),
         },
         {
             name: 'Tailwind CSS',
-            icon: '/logo/tailwind.png',
+            icon: asset('/logo/tailwind.png'),
         },
         {
             name: 'GSAP',
-            icon: '/logo/gsap.png',
+            icon: asset('/logo/gsap.png'),
         },
         {
             name: 'Framer Motion',
-            icon: '/logo/framer-motion.png',
+            icon: asset('/logo/framer-motion.png'),
         },
         {
             name: 'Sass',
-            icon: '/logo/sass.png',
+            icon: asset('/logo/sass.png'),
         },
         {
             name: 'Bootstrap',
-            icon: '/logo/bootstrap.svg',
+            icon: asset('/logo/bootstrap.svg'),
         },
         {
             name: 'Git',
-            icon: '/logo/git.png',
+            icon: asset('/logo/git.png'),
         },
     ],
 };
