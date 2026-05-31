@@ -25,7 +25,7 @@
     "tailwindcss-animate": "^1.0.7"
   },
   "pnpm": {
-    "onlyBuiltDependencies": ["sharp"]
+    "ignoredBuiltDependencies": ["sharp"]
   },
   "devDependencies": {
     "@svgr/cli": "^8.1.0",
